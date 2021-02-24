@@ -1,0 +1,14 @@
+li.nav-item.dropdown
+    if active == 'home'
+        - activeClass = 'active'
+    else
+        - activeClass = ''
+    a#homeDropdownMenuLink(href="index.html", data-target="#" class="nav-link " + activeClass, data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 
+        | Home
+        i.fa.fa-angle-down
+    .dropdown-menu(aria-labelledby='homeDropdownMenuLink')
+        a.dropdown-item(href=path + 'index.html') Fullscreen home + Lookbook
+        a.dropdown-item(href=path + 'index2.html') Split-screen home
+        a.dropdown-item(href=path + 'index3.html') Classic home
+        a.dropdown-item(href=path + 'index4.html') Parallax sections <span class="badge badge-info ml-1">New</span>
+        a.dropdown-item(href=path + 'index5.html') Slider + broken grid <span class="badge badge-info ml-1">New</span>    

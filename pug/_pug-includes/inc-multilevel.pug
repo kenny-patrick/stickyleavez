@@ -1,0 +1,55 @@
+// Multi level dropdown    
+li.nav-item.dropdown
+    a#navbarDropdownMenuLink.nav-link(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+        i.fa.fa-angle-down
+    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+        li
+            a.dropdown-item(href='#') Action
+        li
+            a.dropdown-item(href='#') Another action
+        li.dropdown-submenu
+            a#navbarDropdownMenuLink2.dropdown-item(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Dropdown link
+                i.fa.fa-angle-down.ml-2
+            ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink2')
+                li
+                    a.dropdown-item(href='#') Action
+                li.dropdown-submenu
+                    a#navbarDropdownMenuLink3.dropdown-item(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 
+                        | Another action
+                        i.fa.fa-angle-down.ml-2
+                    
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink3')
+                        li
+                            a.dropdown-item(href='#') Action
+                        li
+                            a.dropdown-item(href='#') Action
+                        li
+                            a.dropdown-item(href='#') Action
+                        li
+                            a.dropdown-item(href='#') Action
+                li.dropdown-submenu
+                    a#navbarDropdownMenuLink4.dropdown-item(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 
+                        | Another action
+                        i.fa.fa-angle-down.ml-2
+                    
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink4')
+                        li
+                            a.dropdown-item(href='#') Action
+                        li
+                            a.dropdown-item(href='#') Action
+                        li
+                            a.dropdown-item(href='#') Action
+                        li
+                            a.dropdown-item(href='#') Action
+                li
+                    a.dropdown-item(href='#') Something else here
+        li.dropdown-submenu
+            a#navbarDropdownMenuLink5.dropdown-item(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Dropdown link
+                i.fa.fa-angle-down.ml-2
+            ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink5')
+                li
+                    a.dropdown-item(href='#') Action                    
+// Multi level dropdown end
